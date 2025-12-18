@@ -4,3 +4,13 @@
 backend/nflp-backend/.env
 frontend/.env
 nlp-service/.env
+nlp-service/app/__pycache__/__init__.cpython-312.pyc
+nlp-service/app/analyzers/__pycache__/__init__.cpython-312.pyc
+nlp-service/app/analyzers/__pycache__/sentiment_analyzer.cpython-312.pyc
+nlp-service/app/models/__pycache__/__init__.cpython-312.pyc
+nlp-service/app/models/__pycache__/requests.cpython-312.pyc
+nlp-service/app/models/__pycache__/responses.cpython-312.pyc
+nlp-service/app/routes/__pycache__/__init__.cpython-312.pyc
+nlp-service/app/routes/__pycache__/sentiment.cpython-312.pyc
+nlp-service/app/utils/__pycache__/__init__.cpython-312.pyc
+nlp-service/app/utils/__pycache__/text_processor.cpython-312.pyc
