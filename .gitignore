@@ -1,3 +1,6 @@
 "target/" 
 "__pycache__/" 
 ".env" 
+backend/nflp-backend/.env
+frontend/.env
+nlp-service/.env
