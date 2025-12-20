@@ -12,8 +12,10 @@ def create_app():
     CORS(app)
     
     # Register blueprints
-    from app.routes import sentiment
+    from app.routes import sentiment, toxicity #, entity
+    # app.register_blueprint(entity.bp)
     app.register_blueprint(sentiment.bp)
+    app.register_blueprint(toxicity.bp)
     
     # Health check endpoint
     @app.route('/health')
@@ -26,8 +28,12 @@ def create_app():
             'service': 'NFL Insights NLP Service',
             'version': '1.0.0',
             'endpoints': {
+                'entity': '/api/entity',
+                'entity_batch': '/api/entity/batch',
                 'sentiment': '/api/sentiment',
                 'sentiment_batch': '/api/sentiment/batch',
+                'toxicity': '/api/toxicity',
+                'toxicity_batch': '/api/toxicity/batch',
                 'health': '/health'
             }
         }, 200

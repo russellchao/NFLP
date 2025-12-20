@@ -1,0 +1,77 @@
+# General insults
+garbage
+trash
+suck
+sucks
+sucked
+worst
+terrible
+horrible
+awful
+pathetic
+useless
+joke
+embarrassing
+disgrace
+worthless
+incompetent
+
+# Intelligence-based insults
+stupid
+idiot
+idiots
+moron
+dumb
+dumbass
+clueless
+
+# Aggressive language
+hate
+hated
+despise
+disgusting
+screw
+screwed
+ridiculous
+absurd
+trash-tier
+
+# NFL-specific toxic terms
+overrated
+washed
+bust
+fraud
+fraudulent
+clown
+choker
+bum
+hack
+
+# Referee/officiating toxicity
+rigged
+fixed
+paid
+blind
+biased
+corrupt
+bail
+bailed
+
+# Team/fanbase attacks
+bandwagon
+fairweather
+fake
+delusional
+crybaby
+
+# Profanity 
+damn
+hell
+crap
+shit
+fuck
+bitch
+bullshit
+ass
+bs
+wtf

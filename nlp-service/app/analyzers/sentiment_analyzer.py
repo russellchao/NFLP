@@ -15,7 +15,7 @@ class SentimentAnalyzer:
     """
     
     def __init__(self):
-        self.analyzer = SentimentIntensityAnalyzer()
+        self.vader_analyzer = SentimentIntensityAnalyzer()
         self.text_processor = TextProcessor()
     
 
@@ -33,7 +33,7 @@ class SentimentAnalyzer:
         cleaned_text = self.text_processor.clean_for_sentiment(text)
         
         # Get VADER scores
-        scores = self.analyzer.polarity_scores(cleaned_text)
+        scores = self.vader_analyzer.polarity_scores(cleaned_text)
         
         # Determine label based on compound score
         label = self.get_sentiment_label(scores['compound'])
@@ -65,7 +65,7 @@ class SentimentAnalyzer:
         else:
             return "NEUTRAL"
     
-    
+
     def batch_analyze(self, texts: list) -> list:
         """
         Analyze multiple texts at once

@@ -14,3 +14,5 @@ nlp-service/app/routes/__pycache__/__init__.cpython-312.pyc
 nlp-service/app/routes/__pycache__/sentiment.cpython-312.pyc
 nlp-service/app/utils/__pycache__/__init__.cpython-312.pyc
 nlp-service/app/utils/__pycache__/text_processor.cpython-312.pyc
+nlp-service/app/routes/__pycache__/toxicity.cpython-312.pyc
+nlp-service/app/analyzers/__pycache__/toxicity_detector.cpython-312.pyc

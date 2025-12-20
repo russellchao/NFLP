@@ -21,6 +21,9 @@ class TextProcessor:
         if not text:
             return ""
         
+        # Lowercase
+        text = text.lower()
+        
         # Remove URLs
         text = re.sub(r'http\S+|www\S+|https\S+', '', text, flags=re.MULTILINE)
         

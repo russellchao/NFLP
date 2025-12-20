@@ -35,6 +35,15 @@ def test_neutral_sentiment():
     assert result.label == "NEUTRAL"
     print(f"✓ Neutral test passed: {result.score}")
 
+def test_reddit_post():
+    # This thread was pulled directly from a reddit post
+    analyzer = SentimentAnalyzer()
+    result = analyzer.analyze("[Garafolo] The NFL has fined #Rams WR Puka Nacua $25,000 for his comments about officiating, source says.")
+
+    print(result)
+    assert result.label == "NEUTRAL"
+    print(f"✓ Reddit test passed: {result.score}")
+
 def test_failed_sentiment(): 
     # Attempt to return a negative sentiment on what should be a positive sentiment "
     # Should return an assertion error
@@ -54,6 +63,7 @@ if __name__ == '__main__':
     test_positive_sentiment()
     test_negative_sentiment()
     test_neutral_sentiment()
+    test_reddit_post()
     print("\n✓ All tests passed!")
     print("\nRunning failed sentiment test (should raise AssertionError)...")
     test_failed_sentiment() 
