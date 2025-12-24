@@ -1,4 +1,4 @@
-# NFL Insights NLP Service
+# NLP Service
 
 Python microservice that analyzes NFL-related text using natural language processing.
 
