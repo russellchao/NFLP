@@ -1,6 +1,7 @@
 """
 Flask application factory
 """
+from app.routes import entity
 from flask import Flask
 from flask_cors import CORS
 
@@ -12,8 +13,8 @@ def create_app():
     CORS(app)
     
     # Register blueprints
-    from app.routes import sentiment, toxicity #, entity
-    # app.register_blueprint(entity.bp)
+    from app.routes import entity, sentiment, toxicity
+    app.register_blueprint(entity.bp)
     app.register_blueprint(sentiment.bp)
     app.register_blueprint(toxicity.bp)
     

@@ -16,3 +16,10 @@ nlp-service/app/utils/__pycache__/__init__.cpython-312.pyc
 nlp-service/app/utils/__pycache__/text_processor.cpython-312.pyc
 nlp-service/app/routes/__pycache__/toxicity.cpython-312.pyc
 nlp-service/app/analyzers/__pycache__/toxicity_detector.cpython-312.pyc
+nlp-service/app/analyzers/__pycache__/entity_extractor.cpython-312.pyc
+nlp-service/app/routes/__pycache__/entity.cpython-312.pyc
+analyze-mockup.html
+dashboard-mockup.html
+fetch-mockup.html
+insights-mockup.html
+toxicity-mockup.html

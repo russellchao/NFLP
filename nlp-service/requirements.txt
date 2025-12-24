@@ -12,5 +12,6 @@ nltk==3.9.2
 numpy==1.26.4
 python-dotenv==1.0.0
 regex==2025.11.3
+spacy==3.7.2
 tqdm==4.67.1
 Werkzeug==3.1.4
