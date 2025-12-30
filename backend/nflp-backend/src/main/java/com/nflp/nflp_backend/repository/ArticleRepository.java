@@ -17,6 +17,9 @@ public interface ArticleRepository extends JpaRepository<Article, Long> {
     // Find analyzed articles
     List<Article> findByAnalyzedTrue();
 
+    // Find by title
+    List<Article> findByTitleContainingIgnoreCase(String keyword);
+
     // Find by source
     List<Article> findBySource(String source);
 

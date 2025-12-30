@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -19,12 +18,15 @@ public class PlayerInsight {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "player_id", nullable = false)
-    private Player player;
+//    @ManyToOne
+//    @JoinColumn(name = "player_id", nullable = false)
+//    private Player player;
+//
+//    @Column(nullable = false)
+//    private LocalDate date;
 
-    @Column(nullable = false)
-    private LocalDate date;
+    @Column(name = "player")
+    private String player;
 
     @Column(name = "avg_sentiment", precision = 3, scale = 2)
     private BigDecimal avgSentiment;
@@ -35,8 +37,8 @@ public class PlayerInsight {
     @Column(name = "top_keywords", columnDefinition = "TEXT")
     private String topKeywords;  // Comma-separated keywords
 
-    @Column(name = "insight_summary", columnDefinition = "TEXT")
-    private String insightSummary;
+//    @Column(name = "insight_summary", columnDefinition = "TEXT")
+//    private String insightSummary;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;

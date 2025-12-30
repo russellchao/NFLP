@@ -7,6 +7,7 @@ import com.nflp.nflp_backend.exception.NLPServiceException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
@@ -78,7 +79,7 @@ public class NLPClientService {
 
         try {
             // Prepare request
-            String url = nlpServiceUrl + "/api/entities";
+            String url = nlpServiceUrl + "/api/entity";
             Map<String, String> requestBody = new HashMap<>();
             requestBody.put("text", text);
 
