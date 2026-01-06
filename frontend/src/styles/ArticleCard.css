@@ -1,0 +1,145 @@
+.article-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.article-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+}
+
+.article-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.article-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.article-info {
+    flex: 1;
+}
+
+.article-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.article-link {
+    color: #3b82f6;
+    font-size: 14px;
+    word-break: break-all;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.article-meta {
+    display: flex;
+    gap: 15px;
+    color: #64748b;
+    font-size: 13px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.article-preview {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding-left: 35px;
+}
+
+.article-actions {
+    display: flex;
+    gap: 10px;
+    padding-left: 35px;
+}
+
+.analyze-btn {
+    background: #10b981;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.analyze-btn:hover {
+    background: #059669;
+    transform: translateY(-1px);
+}
+
+.analyzed-text {
+    color: #10b981;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.badge-unanalyzed {
+    background: #f9c0c0;
+    color: #92400e;
+}
+
+.badge-analyzed {
+    background: #79e7ae;
+    color: #065f46;
+}
+
+.view-analysis-btn {
+    background: #3b82f6;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow: auto;
+}
+

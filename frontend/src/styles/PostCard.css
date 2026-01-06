@@ -1,0 +1,103 @@
+.post-card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.post-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.post-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.post-info {
+    flex: 1;
+}
+
+.post-author {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 6px;
+}
+
+.post-meta {
+    display: flex;
+    gap: 15px;
+    color: #64748b;
+    font-size: 13px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.post-content {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    padding-left: 35px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 10px;
+    padding-left: 35px;
+}
+
+.analyze-btn {
+    background: #10b981;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.analyze-btn:hover {
+    background: #059669;
+    transform: translateY(-1px);
+}
+
+.analyzed-text {
+    color: #10b981;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.badge-unanalyzed {
+    background: #f9c0c0;
+    color: #92400e;
+}
+
+.badge-analyzed {
+    background: #79e7ae;
+    color: #065f46;
+}
