@@ -47,6 +47,9 @@ public interface SocialPostRepository extends JpaRepository<SocialPost, Long> {
     // Count unanalyzed posts
     long countByAnalyzedFalse();
 
+    // Count analyzed posts
+    long countByAnalyzedTrue();
+
     // Count by platform
     long countByPlatform(String platform);
 }

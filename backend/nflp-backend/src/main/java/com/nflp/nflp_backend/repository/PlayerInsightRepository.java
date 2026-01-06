@@ -18,6 +18,9 @@ public interface PlayerInsightRepository extends JpaRepository<PlayerInsight, Lo
     // Find by player (unique constraint)
     Optional<PlayerInsight> findByPlayerIgnoreCase(String player);
 
+    // Get the total number of player insights
+    long count();
+
 //    // Find by player ID, ordered by date
 //    List<PlayerInsight> findByPlayerIdOrderByDateDesc(Long playerId);
 //

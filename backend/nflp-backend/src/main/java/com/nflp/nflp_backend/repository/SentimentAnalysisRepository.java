@@ -37,6 +37,10 @@ public interface SentimentAnalysisRepository extends JpaRepository<SentimentAnal
             @Param("threshold") BigDecimal threshold
     );
 
+    // Get average sentiment of all articles and social posts
+    @Query("SELECT AVG(s.sentimentScore) FROM SentimentAnalysis s")
+    BigDecimal getAverageSentiment();
+
     // Get average sentiment by content type
     @Query("SELECT AVG(s.sentimentScore) FROM SentimentAnalysis s WHERE s.contentType = :contentType")
     BigDecimal getAverageSentimentByType(@Param("contentType") String contentType);

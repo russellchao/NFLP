@@ -17,7 +17,7 @@ public class NewsController {
     private final NewsService newsService;
 
     @PostMapping("/fetch")
-    public ResponseEntity<FetchJob> fetchNews(@RequestParam(defaultValue = "10") Integer pageSize) {
+    public ResponseEntity<FetchJob> fetchNews(@RequestParam Integer pageSize) {
         FetchJob job = newsService.fetchNews(pageSize);
         return ResponseEntity.ok(job);
     }

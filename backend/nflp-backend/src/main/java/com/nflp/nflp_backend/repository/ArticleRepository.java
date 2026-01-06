@@ -44,6 +44,9 @@ public interface ArticleRepository extends JpaRepository<Article, Long> {
     // Count unanalyzed articles
     long countByAnalyzedFalse();
 
+    // Count analyzed articles
+    long countByAnalyzedTrue();
+
     // Count by source
     long countBySource(String source);
 }
